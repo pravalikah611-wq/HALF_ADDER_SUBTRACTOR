@@ -59,19 +59,29 @@ Half subtractor:
 Half adder:
 
 module ex4(a,b,s,c);
+
 input a,b;
+
 output s,c;
+
 xor g1(s,a,b);
+
 and g2(c,a,b);
+
 endmodule
 
 Half subtractor:
 
 module ex5(a,b,d,bout);
+
 input a,b;
+
 output d,bout;
+
 assign d=a^b;
+
 assign bout=(~a)&b;
+
 endmodule
 
 
